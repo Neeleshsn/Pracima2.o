@@ -1,0 +1,1016 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* padding: 2vmax 3vmax; */
+    /* background-color: aqua; */
+}
+
+nav{
+    /* background-color: azure; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+nav > h1{
+    font: 900 2vmax "gilroy";
+    letter-spacing: 3px;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    font: 200 1vmax "Gilroy";
+
+}
+
+nav > ul > li{
+    cursor: pointer;
+    margin-left: 2vmax;
+}
+
+nav > ul > li::before {
+    content: "";
+    width: 0%;
+    /* dought on width */
+    height: .2vmax;
+    bottom: 93.5%;
+    position: absolute;
+    background-color: black;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+nav > ul > li:hover::before {
+    width: 5vmax;
+}
+
+nav > span {
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmax;
+}
+
+/* ----------------page1 */
+
+.page-1{
+    width: 100%;
+    height: 90vh;
+    /* position: relative; */
+    /* background-color: pink; */
+}
+
+.page-1 > h1{
+    font: 900 4vmax "gilroy";
+    line-height: 3.8vmax;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#smart{
+    margin-top: 0;
+}
+
+.page-1 > p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font: 300 1.5vmax "montserrat" ;
+}
+
+.buttons{  
+    display: flex;
+    justify-content: center;
+}
+
+.buttons > button{
+    padding: 1vmax 3vmax;
+    margin: 2vmax;
+    font: 100 1.3vmax "";
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer;  
+    /* font: 100 1.3vmax ""; */
+    transition: 0.5s all
+}
+
+button:hover{
+    background-color: black;
+    color: #eaebe1;
+}
+
+button > span{
+    margin: 0vmax 1vmax 0vmax 0vmax;
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.Simalar{
+    clip-path: polygon(0 0, 33% 0, 41% 9%, 100% 9%, 99% 100%, 0 100%);
+    /* background-color: aqua; */
+    width: 19vmax;
+    border-radius: 1vmax;
+    height: 19vmax;
+}
+
+.left-combine div{
+    /* background-color: blue; */
+    width: 19vmax;
+    /* height: vmax; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.sixty-five{
+    background-color: #d1dbda;
+    margin-left: 1vmax;
+    /* margin-bottom: 10px; */
+    padding: 1vmax;
+    border-radius: 10px;
+    font: 100 1.3vmax "gilroy";
+    position: absolute;
+    top: -50%;
+}
+
+.sixty-five > button{
+    padding: 1vmax 0vmax 1vmax 1vmax;
+    margin: 4vmax 0vmax 0vmax 0vmax;
+    font: 100 1.3vmax "";
+    display: flex;
+    justify-content: space-between;
+    width: 17vmax;
+}
+
+.sixty-five > button > span{
+    font-size: 1vmax;
+    background-color: greenyellow;
+    border-radius: 10vmax;
+}
+
+.Let-them-heard{
+    background-color: black;
+    color: #d1dbda;
+    margin-left: 1vmax;
+    margin-top: 11vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    font: 100 2vmax "gilroy";
+    height: 7vmax;
+    position: relative;
+}
+
+.Let-them-heard > span{
+    position: absolute;
+    right: 2vmax;
+    font-size: 3vmax;
+}
+
+.Health{
+    background-image: url(https://images.unsplash.com/photo-1632923057155-dd35366509ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(15, 15, 15);
+    position: relative;
+    margin-top: -1vmax;
+}
+
+.Health > h1 {
+    margin: 1vmax;
+    font: 500 2vmax "";
+}
+
+.Health > p {
+    margin: 9px;
+    margin-top: 8vmax;
+    font: 540 2vmax "gilroy";
+    color: #fbff00;
+}
+
+.join-5000{
+    background-color: #d1dbda;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vmax; 
+    width: 20vmax;
+    height: 14vmax;
+    margin-top: 4vmax;
+    align-items: center;
+    /* position: relative; */
+    font: 100 1.2vmax "";
+}
+
+.J5{
+    margin-top: 2vmax;
+}
+
+.join-5000 > button{
+    /* background-color: black; */
+    /* color: #d1dbda; */
+    margin-top: 4.5vmax;
+    padding: 0.5vmax  0.5vmax;
+    display: flex;
+    justify-content: space-between;
+    width: 19.5vmax;
+    font: 500 1.5vmax "";
+}
+
+.join-5000 > button > span{
+    margin: 0 0 0 1vmax;
+    background-color: black;
+    color: #d1dbda;
+    border-radius: 10vmax;
+    
+}
+
+
+
+.Simalarly{
+    clip-path: polygon(0 9%, 59% 9%, 75% 0, 100% 0, 100% 100%, 0 100%);
+    width: 19vmax;
+    border-radius: 1vmax;
+    height: 19vmax;
+}
+
+.Education{
+    background-image: url(https://images.unsplash.com/photo-1684843821571-c181bd1109ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: -1vmax;
+}
+
+.Education > h1{
+    margin: 2vmax 1vmax;
+    font: 500 2.5vmax "";
+}
+
+.Education > p{
+    margin: 9px;
+    margin-top: 35%;
+    font: 500 2vmax "gilroy";
+}
+
+.right-combine div{
+    /* background-color: blue; */
+    width: 19vmax;
+    /* height: vmax; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.Explore-more{
+    background-image: url(https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1370&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d1dbda;
+    /* margin-left: 1vmax; */
+    /* margin-bottom: 10px; */
+    padding: 1vmax;
+    border-radius: 1vmax;
+    font: 100 2vmax "gilroy";
+    position: absolute;
+    top: -50%;
+}
+
+.Explore-more > button{
+    padding: 1vmax 0vmax 1vmax 0.5vmax;
+    margin: 15vmax 0vmax 1vmax 0vmax;
+    display: flex;
+    justify-content: space-between;
+    width: 18.5vmax;
+    background-color: transparent;
+    color: aliceblue;
+    border: 0.2vmax solid whitesmoke;
+    font: 100 1.5vmax "gilroy";
+    transition: 0.5s all
+}
+
+.Explore-more > button:hover{
+    background-color: black;
+    color: #eaebe1;
+}
+
+.Explore-more > button > span{
+    background-color: black;
+    color: white;
+    border-radius: 10vmax;
+    /* margin-left: 5px; */
+}
+
+
+
+.Your-home{
+    background-color: #253027;
+    color: #8ea753;
+    /* margin-left: 1vmax; */
+    margin-top: 11vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    height: 7vmax;
+    position: relative;
+
+}
+
+.Your-home > span{
+    position: absolute;
+    left: 1vmax;
+    font-size: 3vmax;
+}
+
+.Your-home > p{
+    position: absolute;
+    right: 2vmax;
+    font: 550 2vmax "gilroy";
+}
+
+/* --------------page2- */
+
+.page-2{
+    width: 100vw;
+    height: 100%;
+    /* background-color: #fbff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Green-box{
+    width: 95vmax;
+    height: 40vmax;
+    background-color: greenyellow;
+    border-radius: 2vmax;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
+}
+
+.heading-box{
+    width: 100%;
+    height: 15vmax;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.partions-box{
+    height: 25vmax;
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+}
+
+.smile{
+    width: 33%;
+    height: 25vmax;
+}
+
+.happiness{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.happiness > h1 {
+    margin-bottom: 2vmax;
+    }
+
+.happiness > span > img{
+    width: 15vmax;
+    height: 15vmax;
+    margin-top: vmax;
+}
+
+.love{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.love > h1 {
+    margin: 2vmax;
+    }
+
+.love > span > img{
+    width: 8vmax;
+    height: 9vmax;
+    margin-top: 1vmax;
+    /* mix-blend-mode: darken; */
+}
+
+.social{
+    /* background-color: olive; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social > h1 {
+margin-bottom: 2vmax;
+}
+
+.social > span > img{
+    width: 20vmax;
+    height: 20vmax;
+    margin-top: -5vmax;
+}
+
+/* ---------------page-2 */
+
+.page-3{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    /* background-color: pink; */
+}
+
+.upper-div{
+    width: 100%;
+    height: 10vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.upper-div > h1{
+    margin-left: 2vmax;
+}
+
+.upper-div > span{
+    margin-right: 6vmax;
+}
+
+.upper-div > span > button{
+    padding: 1vmax 1vmax;
+    border-radius: 50vmax;
+    margin: 1vmax 0.3vmax;
+    font: 100 1vmax "";
+    background-color: transparent;
+    transition: 0.5s all
+}
+
+.upper-div > span > button:hover{
+    color: white;
+    background-color: black;
+}
+
+.upper-div > span > button > i{
+    font: 900 2vmax "";
+}
+
+.lower-div{
+    width: 100%;
+    height: 35.5vmax; 
+    /* background-color: red; */
+    display: flex;
+    /* position: relative; */
+}
+
+.lower-div > section{
+    height: 34vmax;
+    width: 30%;
+    border-radius: 2vmax;
+    margin: 1vmax 2vmax;
+    border: solid 0.4vmax rgb(219, 216, 216);
+    /* position: relative; */
+}
+
+ /* .first{
+    background-color: blue;
+} */
+
+.first > img{
+    width: 27vmax;
+    /* height: 22vmax; */
+    border-radius: 2vmax;
+    margin: 1vmax 1vmax 0vmax 1vmax;
+    object-fit: cover;
+    object-position: center;
+}
+
+.first > h1{
+    margin: 1vmax 1vmax;
+}
+
+.first > p{
+    margin: 1vmax 1vmax;
+}
+
+.first > span {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax;
+ }
+
+.first > span > button {
+    padding: 0.2vmax;
+    background-color: transparent;
+    transition: 0.5s all
+ }
+
+.first > span > button:hover{
+    color: white;
+    background-color: black;
+}
+
+/* .middle{
+    background-color: greenyellow;
+} */
+
+.middle > img{
+    width: 27vmax;
+    height: 18vmax;
+    border-radius: 2vmax;
+    margin: 1vmax 1vmax 0vmax 1vmax;
+    object-fit: cover;
+    object-position: center;
+}
+
+.middle > h1{
+    margin: 1vmax 1vmax;
+}
+
+.middle > p{
+    margin: 1vmax 1vmax;
+}
+
+.middle > span {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax;
+ }
+
+ .middle > span > button {
+    padding: 0.2vmax;
+    background-color: transparent;
+    transition: 0.5s all
+ }
+
+.middle > span > button:hover{
+    color: white;
+    background-color: black;
+}
+
+/* .last{
+    background-color: orange; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+/* }  */
+
+.last > img{
+    width: 27vmax;
+    /* height: 22vmax; */
+    border-radius: 2vmax;
+    margin: 1vmax 1vmax 0vmax 1vmax;
+    object-fit: cover;
+    object-position: center;
+}
+
+.last > h1{
+    margin: 1vmax 1vmax;
+}
+
+.last > p{
+    margin: 1vmax 1vmax;
+}
+
+.dollaer{
+    display: flex;
+    margin: 0vmax 1vmax;
+}
+
+.dollaer > h3{
+    margin-right: 1vmax;
+}
+
+progress {
+    text-align: center;
+    width: 350px;
+    height: 10px;
+    border: 2px  solid rgb(82, 61, 61);
+    border-radius: 10px;
+    margin: 0vmax 1vmax;
+ }
+progress::-webkit-progress-bar {
+    background-color: rgb(250, 255, 250);
+ }
+
+ progress::-webkit-progress-value {
+    background-color: springgreen;
+ }
+
+ .last > span {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax;
+ }
+
+ .last > span > button {
+    padding: 0.2vmax;
+    background-color: transparent;
+    transition: 0.5s all
+ }
+
+ .last > span > button:hover{
+    color: white;
+    background-color: black;
+}
+
+ /* ------------page-4 */
+
+ .page-4{
+    width: 100vw;
+    height: 100%;
+    /* background-color: orangered;   */
+ }
+
+ 
+
+ .center{
+    width: 100vw;
+    height: 99%;
+    /* background-color: #fbff00; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+ }
+
+ .center > img{
+    position: absolute;
+    border-radius: 2vmax;
+    /* left: 10vmax; */
+    
+    /* background-position: center; */
+    /* background-size: cover; */
+ }
+
+ .rec{
+    width: 13vmax;
+    height: 19vmax;
+    
+ }
+
+ .a{
+    position: absolute;
+    top: 7vmax;
+    left: 9vmax;
+ }
+
+ .d{
+    position: absolute;
+    bottom: 1vmax;
+    right: 15vmax;
+ }
+
+ .squa{
+    width: 10vmax;
+    height: 10vmax;
+    position: absolute;
+    
+ }
+
+ .b{
+    bottom: 2vmax;
+    left: 18vmax;
+ }
+
+ .c{
+    right: 9vmax;
+    top: 9vmax;
+ }
+ 
+
+ .center > h5{
+    font: 540 2vmax "";
+ }
+
+ .center > h1{
+    font: 540 9vmax "";
+    margin-top: 3vmax;
+ }
+
+ .center > button{
+    padding: .5vmax 2vmax;
+    font: 00 1.1vmax "gilroy";
+    color: black;
+    background-color: whitesmoke;
+    transition: 0.5s all
+ }
+
+ .center > button:hover{
+    color: white;
+    background-color: black;
+}
+
+ .first-btn{
+    margin-top: 7vmax;
+ }
+
+ .page-5{
+    width: 100vw;
+    height: 100%;
+    /* background-color: orangered;   */
+    position: relative;
+ }
+ .upper_div{
+    width: 100vw;
+    height: 30%;
+    /* background-color: #d1dbda; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .upper_div > h1{
+    margin-bottom: 1vmax;
+    font: 900 2.5vmax "";
+ }
+ 
+ .upper_div > p{
+    font: 100 1.5vmax "gilroy";
+ }
+
+ .lower_div{
+    width: 100vw;
+    height: 69%;
+    /* background-color: #8ea753; */
+    display: flex;
+ }
+
+ .lower_div > section{
+    /* background-color: #fbff00; */
+    height: 31vmax;
+    width: 25%; 
+ }
+
+ .lower_div > section > div{
+    /* background-color: blue; */
+    height: 25vmax;
+    width: 91%;
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    border-radius: 2vmax;
+    clip-path: polygon(0 0, 45% 0, 51% 9%, 100% 9%, 100% 100%, 0 100%);
+ }
+
+ .lower_div > section > h1 {
+    margin-top: 1vmax;
+    margin-left: 2vmax;
+ }
+
+ .lower_div > section > p {
+    margin-top: .5vmax;
+    margin-left: 2vmax;
+    font: 500 1.3vmax "gilroy";
+ }
+
+ .one{
+    background-image: url(https://images.unsplash.com/photo-1587837073080-448bc6a2329b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .two{
+    background-image: url(https://images.unsplash.com/photo-1587398396609-5bc29d58a096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1378&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ .three{
+    background-image: url(https://images.unsplash.com/photo-1536005233760-9894e2a60c3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .four{
+    background-image: url(https://images.unsplash.com/photo-1514136649217-b627b4b9cfb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+/* ------------page-6 */
+
+ .page-6{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.icon6{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    mix-blend-mode: color-burn;
+    
+    top: -3px;
+    /* z-index: 99; */
+}
+ .gray-div{
+    background-color: #eaebe1;
+    width: 90vw;
+    height: 90%;
+    border-radius: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .heading-div{
+    /* background-color: aqua; */
+    width: 85vw;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .heading-div > h1{
+    margin-top: 3vmax;
+    margin-bottom: 1vmax;
+    font: 600 3vmax "";
+ }
+
+ .heading-div > p{
+    font: 100 1.1vmax "gilroy";
+ }
+
+ .questions{
+    /* background-color: rgb(131, 189, 126); */
+    width: 85vw;
+    height: 69%;
+ }
+
+ .questions > section{
+    height: 27%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .questions > section > h2{
+    margin-top: 2vmax;
+ }
+
+ .questions > section > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 100 2vmax "";
+ }
+
+.down-aero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 100 2vmax "";
+}
+
+ hr{
+    background-color: #949492;
+    color: black;
+    height: .3vmax;
+    border-radius: 1vmax;
+ }
+
+.queans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.queans > div > h2{
+    margin: 1vmax 0vmax;
+}
+
+.queans > div > p{
+    font: 100 1vmax "gilroy";
+}
+
+/* -----------page-7 */
+
+.page-7{
+    width: 100%;
+    height: 40%;
+    /* background-color: #fbff00; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-box{
+    width: 94vmax;
+    height: 16vmax;
+    background-color: #043d2c;
+    border-radius: 2vmax;
+}
+
+.up{
+    /* background-color: #fbff00; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+}
+
+li{
+    font: 450 1vmax "gilroy";
+    padding: 0.5vmax;
+}
+
+.up > section > h1{
+    font: 600 3vmax "";
+}
+
+.up > section > p{
+    font: 100 1.5vmax "gilroy"
+}
+
+.up > section{
+    margin: 2vmax;
+}
+
+.down{
+    /* background-color: #4400ff; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 1vmax;
+}
+
+.down > button{
+    padding: 0.5vmax 0vmax 0.5vmax 0.5vmax;
+    margin-right: 2vmax;
+    background-color: transparent;
+    color: white;
+}
+
+.down > button > span{
+    margin: 0.5vmax;
+    background-color: #88b86e;
+    border-radius: 2vmax;
+}
